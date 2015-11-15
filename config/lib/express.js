@@ -54,6 +54,13 @@ module.exports.initMiddleware = function (app) {
     // Enable jsonp
     app.enable('jsonp callback');
 
+    // Enable CORS
+    app.use(function(req, res, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+    });
+
     // Should be placed before express.static
     app.use(compress({
         filter: function (req, res) {

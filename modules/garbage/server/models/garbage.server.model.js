@@ -15,4 +15,12 @@ var Garbageschema = new Schema({
     }
 });
 
+/**
+ * Get all garbage features
+ * @returns {Query<T[]>} List of garbage features
+ */
+Garbageschema.statics.findAll = function () {
+    return this.model('Garbage').find({});
+};
+
 mongoose.model('Garbage', Garbageschema);

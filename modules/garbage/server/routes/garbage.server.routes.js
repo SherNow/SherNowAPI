@@ -11,9 +11,9 @@ module.exports = function (app) {
       .get(garbages.list);
 
   // Single garbage routes
-  app.route('/api/garbage/:garbageId')
+  app.route('/api/garbage/:postalCode')
       .get(garbages.read);
 
   // Finish by binding the garbage middleware
-  app.param('garbageId', garbages.garbageByID);
+  app.param('postalCode', garbages.garbageByPostalCode);
 };

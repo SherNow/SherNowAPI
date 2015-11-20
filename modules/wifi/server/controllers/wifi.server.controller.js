@@ -20,8 +20,6 @@ exports.read = function (req, res) {
  */
 exports.list = function (req, res) {
     Wifi.find().exec(function (err, wifis) {
-
-        console.log(wifis);
         
         if (err) {
             return res.status(400).send({
@@ -38,8 +36,6 @@ exports.list = function (req, res) {
  */
 exports.wifiByID = function (req, res, next, id) {
 
-    console.log(id);
-    
     if (!mongoose.Types.ObjectId.isValid(id)) {
         return res.status(400).send({
             message: 'Wifi is invalid'

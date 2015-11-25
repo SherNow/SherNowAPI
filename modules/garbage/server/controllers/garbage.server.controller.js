@@ -56,7 +56,7 @@ exports.garbageByPostalCode = function (req, res, next, postalCode) {
                         collect = {
                             _id: collectZone._id,
                             collectDay: collectZone.feature.properties[collectDay]
-                        }
+                        };
                     }
                 });
 

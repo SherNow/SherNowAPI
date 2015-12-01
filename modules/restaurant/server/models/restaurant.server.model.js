@@ -17,7 +17,7 @@ var Restaurantschema = new Schema({
 
 /**
  * Get all garbage features
- * @returns {Query<T[]>} List of garbage features
+ * @returns {Query<T[]>} List of restaurants features
  */
 Restaurantschema.statics.findAll = function () {
     return this.model('Restaurant').find({});

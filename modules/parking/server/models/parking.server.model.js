@@ -17,7 +17,7 @@ var Parkingschema = new Schema({
 
 /**
  * Get all garbage features
- * @returns {Query<T[]>} List of garbage features
+ * @returns {Query<T[]>} List of parking features
  */
 Parkingschema.statics.findAll = function () {
     return this.model('Parking').find({});

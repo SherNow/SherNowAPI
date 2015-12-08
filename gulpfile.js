@@ -129,14 +129,18 @@ gulp.task('mocha', function (done) {
     var mongoose = require('./config/lib/mongoose.js');
     var error;
 
+
     // Connect mongoose
     mongoose.connect(function () {
+        mongoose.loadModels();
         // Run the tests
         gulp.src(testAssets.tests.server)
             .pipe(plugins.mocha({
                 reporter: 'spec'
             }))
             .on('error', function (err) {
+                console.log(err);
+
                 // If an error occurs, save it
                 error = err;
             })

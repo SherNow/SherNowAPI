@@ -38,7 +38,6 @@ exports.list = function (req, res) {
 var GeolocalisationGetter = function(){
     this.get = function(postalCode) {
         return new Promise(function(resolve, reject) {
-            console.log('http://maps.googleapis.com/maps/api/geocode/json?address=' + postalCode);
             request('http://maps.googleapis.com/maps/api/geocode/json?address=' + postalCode,
                 function (error, response, body) {
                     if (!error && response.statusCode === 200) {
@@ -55,8 +54,6 @@ var GeolocalisationGetter = function(){
 var CollectZoneGetter = function(){
     this.get = function(geoLocation, features){
         var zone = null;
-        console.log(geoLocation);
-        
         _.each(features, function (polygone) {
         if (geojsonUtils.pointInPolygon({"type":"Point","coordinates":[geoLocation.lng, geoLocation.lat]},
                 {"type":polygone.feature.geometry.type, "coordinates": polygone.feature.geometry.coordinates })) {

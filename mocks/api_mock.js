@@ -1,6 +1,9 @@
 var apiServerMock = {
     garbage : {
-        validDates : ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche']
+       postalCode : {
+           valid : 'J1C0G6',
+           invalid: 'G0M1Y0'
+       }
     },
     wifi : {
         valid : {

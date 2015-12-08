@@ -75,6 +75,47 @@ var apiServerMock = {
             "FichierImage" : "http://tests/image.jpg",
             "Distance" : -1
         }
+    },
+    event: {
+        valid : {
+            "_id" : "565e1012bb877c1fabb1abf5",
+            "MUNID" : 43027,
+            "CODEID" : "21490",
+            "DT01" : "2015-03-29",
+            "DT02" : "2015-05-17",
+            "TITRE" : "Au commencement, Materia Prima",
+            "CATEG" : [
+                "Expositions"
+            ],
+            "LOC" : "Centre culturel et du patrimoine Uplands | 9, rue Speid, Sherbrooke (Lennoxville) Québec J1M 1R9",
+            "AD" : "9, Speid, Sherbrooke (Québec) J1M 1R9",
+            "AD_MUN" : "Sherbrooke",
+            "AD_MUNID" : 43027,
+            "TEL1" : "8195640409",
+            "CONTACT" : "info@uplands.ca",
+            "DESCRIP" : "Lucy Doheny – Annis Karpenko",
+            "URL" : "http://www.uplands.ca/centre/?q=expositions-contemporaines#Current",
+            "URL_PHOTO" : "http://www.destinationsherbrooke.com/partenaires/42075/images/materia_prima1.jpg"
+        },
+        new : {
+            "MUNID" : 43027,
+            "CODEID" : "21490",
+            "DT01" : "2015-03-29",
+            "DT02" : "2015-05-17",
+            "TITRE" : "A new event",
+            "CATEG" : [
+                "Expositions"
+            ],
+            "LOC" : "Centre culturel et du patrimoine Uplands | 9, rue Speid, Sherbrooke (Lennoxville) Québec J1M 1R9",
+            "AD" : "9, Speid, Sherbrooke (Québec) J1M 1R9",
+            "AD_MUN" : "Sherbrooke",
+            "AD_MUNID" : 43027,
+            "TEL1" : "8195640409",
+            "CONTACT" : "info@uplands.ca",
+            "DESCRIP" : "Lucy Doheny – Annis Karpenko",
+            "URL" : "http://www.uplands.ca/centre/?q=expositions-contemporaines#Current",
+            "URL_PHOTO" : "http://www.destinationsherbrooke.com/partenaires/42075/images/materia_prima1.jpg"
+        }
     }
 }
 

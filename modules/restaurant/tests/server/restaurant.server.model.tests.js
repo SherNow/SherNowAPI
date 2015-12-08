@@ -5,7 +5,7 @@
  */
 var should = require('should'),
     mongoose = require('mongoose'),
-    Wifi = mongoose.model('Wifi'),
+    Restaurant = mongoose.model('Restaurant'),
     mock = require('../../../../mocks/api_mock.js');
 
 /**
@@ -16,10 +16,10 @@ var wifi, wifiId;
 /**
  * Unit tests
  */
-describe('Wifi Model Unit Tests:', function () {
+describe('Restaurant Model Unit Tests:', function () {
 
     beforeEach(function (done) {
-        wifi = new Wifi(mock.wifi.new);
+        wifi = new Restaurant(mock.wifi.new);
         done();
     });
 
@@ -34,7 +34,7 @@ describe('Wifi Model Unit Tests:', function () {
     });
 
     afterEach(function (done) {
-        Wifi.find({_id : wifiId}).remove().exec();
+        Restaurant.find({_id : wifiId}).remove().exec();
         done();
     });
 });

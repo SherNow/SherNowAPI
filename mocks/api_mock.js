@@ -34,6 +34,47 @@ var apiServerMock = {
             "latitude" : "46.409022",
             "longitude" : "-72.883414"
         }
+    },
+    restaurant: {
+        valid : {
+            "_id" : "56663daf29fa10b105164e48",
+            "ID" : 131.0000000000000000,
+            "Nom" : "An Phú - Restaurant vietnamien",
+            "SiteWeb" : "",
+            "NumeroCivique" : "1105",
+            "Rue" : "King Est",
+            "CodePostal" : "J1G1E5",
+            "Arrondissement" : "De Jacques-Cartier",
+            "Ville" : "Sherbrooke",
+            "Latitude" : "45.4080776",
+            "Longitude" : "-71.86472400000002",
+            "NumeroTelephone" : "8195691445",
+            "Categories" : "7",
+            "Offres" : "0",
+            "EchellePrix" : 3.0000000000000000,
+            "DescriptionCourte" : "Pour une cuisine vietnamienne authentique goûteuse et exquise, le restaurant An Phú est un incontournable.",
+            "FichierImage" : "http://www.destinationsherbrooke.com/partenaires/1586/images/an_hu3.jpg",
+            "Distance" : -1
+        },
+        new : {
+            "ID" : 1000.0000000000000000,
+            "Nom" : "A new restaurant",
+            "SiteWeb" : "",
+            "NumeroCivique" : "1000",
+            "Rue" : "King Est",
+            "CodePostal" : "J1G1E5",
+            "Arrondissement" : "De Jacques-Cartier",
+            "Ville" : "Sherbrooke",
+            "Latitude" : "45.4080776",
+            "Longitude" : "-71.86472400000002",
+            "NumeroTelephone" : "8195691445",
+            "Categories" : "4",
+            "Offres" : "0",
+            "EchellePrix" : 3.0000000000000000,
+            "DescriptionCourte" : "Lorem",
+            "FichierImage" : "http://tests/image.jpg",
+            "Distance" : -1
+        }
     }
 }
 

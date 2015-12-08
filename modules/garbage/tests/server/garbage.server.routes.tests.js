@@ -68,7 +68,7 @@ describe('Collect day CRUD tests', function () {
             });
     });
 
-    it('should return proper error for single garbage which doesnt exist', function (done) {
+    it('should return proper error for single collect day which doesnt exist', function (done) {
         // This is a valid mongoose Id but a non-existent garbage
         request(app).get('/api/garbage/' + mock.garbage.postalCode.invalid)
             .end(function (req, res) {

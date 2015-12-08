@@ -116,6 +116,39 @@ var apiServerMock = {
             "URL" : "http://www.uplands.ca/centre/?q=expositions-contemporaines#Current",
             "URL_PHOTO" : "http://www.destinationsherbrooke.com/partenaires/42075/images/materia_prima1.jpg"
         }
+    },
+    parking : {
+        valid : {
+            "_id" : "56663da329fa10b105164e3e",
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [
+                    -71.8911219521228020,
+                    45.4045730553078997
+                ]
+            },
+            "properties" : {
+                "x" : "-71.8911219521228",
+                "y" : "45.4045730553079",
+                "NOM" : "Stationnement la Grenouillère"
+            }
+        },
+        new : {
+            "type" : "Feature",
+            "geometry" : {
+                "type" : "Point",
+                "coordinates" : [
+                    -76.8911219521228020,
+                    46.4045730553078997
+                ]
+            },
+            "properties" : {
+                "x" : "-72.8911219521228",
+                "y" : "46.4045730553079",
+                "NOM" : "A new parking"
+            }
+        }
     }
 }
 
